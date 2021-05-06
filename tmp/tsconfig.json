@@ -1,12 +1,18 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es2019",
+        "esModuleInterop": true,
+        "target": "esnext",
+        "noImplicitAny": true,
 
-        "strict": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "noUnusedLocals": true,
+        "noImplicitReturns": true,
         "noFallthroughCasesInSwitch": true,
         "experimentalDecorators": true,
-        "noUnusedLocals": true,
 
         "moduleResolution": "node",
         "sourceMap": true,
@@ -19,7 +25,11 @@
         },
         "lib": [
           "DOM",
-          "ES2019"
+          "ES5",
+          "ES2015",
+          "ES2016",
+          "ES2017",
+          "ESNext.bigint"
         ],
         "declaration": true
     },
