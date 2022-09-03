@@ -1,6 +1,6 @@
 {
   "name": "@curveball/azure-function",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Curveball handler for Azure functions",
   "main": "dist/index.js",
   "scripts": {
