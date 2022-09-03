@@ -1,13 +1,14 @@
 {
   "name": "@curveball/azure-function",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Curveball handler for Azure functions",
   "main": "dist/index.js",
   "scripts": {
     "prepublishOnly": "make build",
-    "test": "make lint test",
+    "test": "make lint",
     "tsc": "tsc",
-    "start": "make start"
+    "start": "make start",
+    "lint": "make lint"
   },
   "repository": {
     "type": "git",
@@ -38,29 +39,26 @@
   "homepage": "https://github.com/curveball/azure-function#readme",
   "devDependencies": {
     "@azure/functions": "^1.2.0",
-    "@curveball/core": "^0.10.0",
+    "@curveball/kernel": "^0.20.0",
     "@types/chai": "^4.2.7",
-    "@types/mocha": "^5.2.7",
-    "@types/node": "^12.20.12",
-    "@types/sinon": "^7.5.1",
-    "@typescript-eslint/eslint-plugin": "^3.6.1",
-    "@typescript-eslint/parser": "^3.6.1",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^14.18.26",
+    "@types/sinon": "^10.0.13",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
     "chai": "^4.2.0",
-    "eslint": "^7.4.0",
-    "mocha": "^7.0.1",
+    "eslint": "^8.23.0",
+    "mocha": "^10.0.0",
     "nyc": "^15.0.0",
-    "sinon": "^8.1.1",
-    "ts-node": "^8.6.2",
-    "typescript": "^3.7.5"
+    "sinon": "^14.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.2"
   },
   "types": "dist/",
   "nyc": {
     "extension": [
       ".ts"
     ]
-  },
-  "peerDependencies": {
-    "@curveball/core": ">=0.9 <1"
   },
   "mocha": {
     "require": "ts-node/register",
@@ -70,5 +68,8 @@
       "js",
       "tsx"
     ]
+  },
+  "peerDependencies": {
+    "@curveball/kernel": ">=0.20.0 <1"
   }
 }

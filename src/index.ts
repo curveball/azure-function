@@ -1,5 +1,5 @@
-import { Application, Context, MemoryRequest, MemoryResponse, Response } from '@curveball/core';
-import qs from 'querystring';
+import { Application, Context, MemoryRequest, MemoryResponse, Response } from '@curveball/kernel';
+import * as qs from 'querystring';
 import { AzureFunction, Context as AzureContext, HttpRequest as AzureRequest } from '@azure/functions';
 import { AzureResponse } from './types';
 
