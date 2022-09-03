@@ -6,7 +6,7 @@ Azure Function bindings for Curveball. Go 'serverless' with [Curveball][1].
 Installation
 ------------
 
-    npm install @curveball/azure-function @curveball/core
+    npm install @curveball/azure-function @curveball/kernel
 
 
 Getting started
@@ -18,7 +18,7 @@ the easiest is to start with the `http-trigger` template.
 After this, your `index.ts` should look a little like this:
 
 ```typescript
-import { Application } from '@curveball/core';
+import { Application } from '@curveball/kernel';
 import { handler } from '@curveball/azure-function'
 
 const app = new Application();
