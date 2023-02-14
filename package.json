@@ -38,11 +38,11 @@
     "url": "git+https://github.com/curveball/azure-function.git"
   },
   "peerDependencies": {
-    "@curveball/kernel": ">=0.21.0-beta.11 <1"
+    "@curveball/kernel": ">=0.21.0 <1"
   },
   "devDependencies": {
     "@azure/functions": "^3.5.0",
-    "@curveball/kernel": ">=0.21.0-beta.11 <1",
+    "@curveball/kernel": ">=0.21.0 <1",
     "@types/chai": "^4.2.7",
     "@types/mocha": "^10.0.1",
     "@types/node": "^14.18.26",
