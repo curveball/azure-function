@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.2.0 (????-??-??)
+0.2.0 (2023-02-14)
 ------------------
 
 * Now has a ESM and CommonJS build.
@@ -12,6 +12,7 @@ Changelog
 ------------------
 
 * Updated to use `@curveball/kernel`.
+
 
 0.0.1 (2020-03-18)
 ------------------
